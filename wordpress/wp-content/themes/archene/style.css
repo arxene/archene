@@ -1,0 +1,27 @@
+/*Theme Name: Archene
+Description: Responsive, flat, parallax theme for Archene
+Version: 1.0
+Author: Ray McMahan
+Author URI: http://www.archene.com
+*/
+
+.post {
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 0px 14px;
+}
+
+.site-title a:link,
+.site-title a:visited {
+	color: rgba(66,54,65,.8);
+}
+
+.site-title a:hover {
+	text-decoration: none;
+	color: rgba(66,54,65,1.0);
+}
+
+.entry-title a:hover {
+	text-decoration: none;
+}
