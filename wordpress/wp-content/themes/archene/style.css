@@ -25,3 +25,60 @@ Author URI: http://www.archene.com
 .entry-title a:hover {
 	text-decoration: none;
 }
+
+/**
+ * Copied the following two blocks of CSS from Twenty Fifteen so images would be properly wrapped in the post div
+ */
+.clear:before,
+.clear:after,
+.post:before,
+.post:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.post:after {
+	clear: both;
+}
+
+/**
+ * 8.0 Alignments
+ * Copied from WordPress Twenty Fifteen theme
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+	clear: both;
+	margin-top: 0.4em;
+	margin-bottom: 1.6em;
+}
