@@ -5,6 +5,10 @@ Author: Ray McMahan
 Author URI: http://www.archene.com
 */
 
+/**
+ * TODO: Make it so images resize when div.post is smaller than the image
+ */
+
 .post {
 	border: 1px solid #e1e1e8;
 	border-radius: 4px;
@@ -81,4 +85,12 @@ img.aligncenter {
 	clear: both;
 	margin-top: 0.4em;
 	margin-bottom: 1.6em;
+}
+
+/**
+ * This is so post images will resize to be smaller if the post size is smaller than the original image size
+ */
+.post img {
+	max-width: 100%;
+	height: auto;
 }
