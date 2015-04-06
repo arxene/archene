@@ -23,16 +23,7 @@
 <body>
 	<div class="container-fluid">
     	<header>
-            <div class="page-header">
-            	<?php /*if ( is_home() && !is_front_page() ) : ?>
-                    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-                <?php elseif( is_front_page() ) : ?>
-                	<h1>
-                        Archene<br>
-                        <small>Website and WordPress custom theme design</small>
-                    </h1>
-                <?php endif; */ ?>
-                
+            <div class="page-header">                
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                 
                 <?php
