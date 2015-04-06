@@ -4,16 +4,16 @@
                     	<div class="container-fluid">
                         	<div class="navbar-header" style="float:none;">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        data-target="#menu" aria-expanded="false" aria-controls="navbar">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                                 </button>
                                 <span class="navbar-brand">Menu</span>
                             </div>
                             
-                            <div id="navbar" class="navbar-collapse collapse">
-                                <ul style="list-style-type:none">
-                                    <li><a href="#">Link</a></li>
+                            <div id="menu" class="navbar-collapse collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="#">Link</a></li>
                                     <li><a href="#">Link</a></li>
                                     <li><a href="#">Link</a></li>
                                     <li><a href="#">Link</a></li>

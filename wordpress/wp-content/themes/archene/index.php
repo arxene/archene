@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 		<div class="row">
-        	<div class="col-xs-12 col-md-4">
+        	<div class="col-xs-12 col-sm-4">
             	<?php get_sidebar(); ?>
             </div>
             
-        	<div class="col-xs-12 col-md-8">
+        	<div class="col-xs-12 col-sm-8">
                 <div id="content">
                     <?php
 						if ( have_posts() ) :
