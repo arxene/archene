@@ -9,6 +9,7 @@ $args = array(
 	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
+
 function register_sidebar_menu() {
   register_nav_menu('sidebar-menu',__( 'Sidebar Menu' ));
 }

@@ -12,7 +12,7 @@
                             </div>
                             
                             <div id="menu" class="navbar-collapse collapse">
-                            	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                            	<?php wp_nav_menu( array( 'theme_location' => 'sidebar-menu' ) ); ?>
                             </div>
                         </div>
                     </nav>
