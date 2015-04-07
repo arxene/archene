@@ -12,12 +12,7 @@
                             </div>
                             
                             <div id="menu" class="navbar-collapse collapse">
-                                <ul class="nav">
-                                    <li class="active"><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                </ul>
+                            	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                             </div>
                         </div>
                     </nav>
