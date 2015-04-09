@@ -21,26 +21,24 @@
 </head>
 
 <body>
-	<div class="container-fluid">
-    	<header>
-        	<?php if ( get_header_image() ) : ?>
-                <div id="site-header">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-                        <!--img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"-->
-                    </a>
-                </div>
-            <?php endif; ?>
-            <div class="page-header">                
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                
-                <?php
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
-				?>
-            </div><!-- .page-header -->
-        </header>
-        
-        
+    <header>
+        <?php if ( get_header_image() ) : ?>
+            <div id="site-header">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src="<?php header_image(); ?>" id="logo" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+                </a>
+            </div>
+        <?php endif; ?>
+    </header>
+    
+    <div class="container-fluid">
+    	<div class="page-header">                
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            
+            <?php
+                $description = get_bloginfo( 'description', 'display' );
+                if ( $description || is_customize_preview() ) : ?>
+                    <p class="site-description"><?php echo $description; ?></p>
+                <?php endif;
+            ?>
+        </div><!-- .page-header -->
