@@ -105,3 +105,8 @@ img.aligncenter {
 	margin: 0;
 	padding: 0;
 }
+
+footer {
+	display: block;
+	clear: both;
+}
