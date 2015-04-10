@@ -1,4 +1,3 @@
-				<!-- TODO: make this show a 3-line icon instead of the nevbar/list-group when viewed on small display -->
 				<div id="sidebar">
 					<nav class="navbar navbar-default">
                     	<div class="container-fluid">
