@@ -25,6 +25,24 @@ function archene_entry_meta() {
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			get_the_author()
 	);
+			
+	if ( 'post' == get_post_type() ) {
+		$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.') );
+		if ( $categories_list ) {
+			printf( '<p>%1$s %2$s</p>',
+				_x( 'Categories:', 'Used before category names.', 'archene' ),
+				$categories_list
+			);
+		}
+
+		$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
+		if ( $tags_list ) {
+			printf( '<p>%1$s %2$s</p>',
+				_x( 'Tags:', 'Used before tag names.', 'twentyfifteen' ),
+				$tags_list
+			);
+		}
+	}
 }
 endif;
  
