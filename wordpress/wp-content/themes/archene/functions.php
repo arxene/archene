@@ -19,9 +19,12 @@ add_action( 'init', 'register_sidebar_menu' );
 
 if ( ! function_exists( 'archene_entry_meta' ) ) :
 function archene_entry_meta() {
-	printf( '<p>Posted on %1$s at %2$s.</p>',
+	printf( '<p>Posted on %1$s at %2$s by <a href="%3$s">%4$s</a>.</p>',
 			get_the_date(),
-			get_the_time() );
+			get_the_time(),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			get_the_author()
+	);
 }
 endif;
  
