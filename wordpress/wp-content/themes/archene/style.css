@@ -114,3 +114,8 @@ footer {
 	display: block;
 	clear: both;
 }
+
+/* Make it so form label Comment doesn't float to the left of the comments box */
+.comment-form-comment label {
+	display: block;
+}

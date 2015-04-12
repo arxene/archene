@@ -19,13 +19,15 @@ add_action( 'init', 'register_sidebar_menu' );
 
 if ( ! function_exists( 'archene_entry_meta' ) ) :
 function archene_entry_meta() {
+	// get posted date and s=author
 	printf( '<p>Posted on %1$s at %2$s by <a href="%3$s">%4$s</a>.</p>',
 			get_the_date(),
 			get_the_time(),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			get_the_author()
 	);
-			
+	
+	// get categories and tags
 	if ( 'post' == get_post_type() ) {
 		$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.') );
 		if ( $categories_list ) {
@@ -42,6 +44,13 @@ function archene_entry_meta() {
 				$tags_list
 			);
 		}
+	}
+	
+	// get comment button
+	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		echo '<p>';
+		comments_popup_link( __( 'Leave a comment', 'archene' ), __( '1 Comment', 'archene' ), __( '% Comments', 'archene' ), '', 'Commenting is disabled.' );
+		echo '</p>';
 	}
 }
 endif;
