@@ -37,12 +37,9 @@ function archene_entry_meta() {
 			);
 		}
 
-		$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
+		$tags_list = get_the_tag_list( '<ul class="hashtags"><li>', '</li><li>', '</li></ul>' );
 		if ( $tags_list ) {
-			printf( '<p>%1$s %2$s</p>',
-				_x( 'Tags:', 'Used before tag names.', 'twentyfifteen' ),
-				$tags_list
-			);
+			echo $tags_list;
 		}
 	}
 	

@@ -119,3 +119,21 @@ footer {
 .comment-form-comment label {
 	display: block;
 }
+
+/* Style tags to look like Twitter hashtags */
+.hashtags {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.hashtags li {
+	background-color: #f7f2a3; /* sand yellow */
+	display: inline;
+	border-radius: 5px;
+	margin-right: 3px;
+	padding: 3px;
+}
+
+.hashtags li a::before {
+	content: '#';
+}
