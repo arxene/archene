@@ -23,5 +23,5 @@
                 </div><!-- .post -->
             </div>
         </div><!-- .row in header.php -->
-        
-        <?php get_footer(); ?>
+    </div><!-- container-fluid -->
+    <?php get_footer(); ?>
