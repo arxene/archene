@@ -1,7 +1,5 @@
 	<footer class="footer">
-        <div class="container-fluid">
-            <p class="text-muted">Archene © 2015</p>
-        </div>
+        <p class="text-muted">Archene © 2015</p>
     </footer>
     
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
