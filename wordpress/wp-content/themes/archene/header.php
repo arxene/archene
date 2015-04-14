@@ -11,7 +11,6 @@
 <script>(function(){document.documentElement.className='js'})();</script>
 
 <title>Archene Design</title>
-<!-- link rel="stylesheet" type="text/css" href="style.css" -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap-theme.min.css">
