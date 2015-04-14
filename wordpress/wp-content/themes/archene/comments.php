@@ -45,6 +45,41 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'archene' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php
+		/**
+		 * Lifted these args for a responsive Bootstrap form from
+		 * http://www.hiresponsive.com/how-to-customize-responsive-wordpress-comment-form/
+		 */
+		$args = array(
+			'fields' => apply_filters(
+				'comment_form_default_fields', array(
+					'author' =>'<div class="form-group">' .
+					'<label for="comment_author" class="col-sm-2 control-label">Name*</label>' .
+					'<div class="col-sm-10"><input id="author" placeholder="Name" name="author" class="form-control" type="text" value="' .
+					esc_attr( $commenter['comment_author'] ) . '" /></div></div><!-- form-group -->'
+					,
+					'email'  => '<div class="form-group">' .
+					'<label for="comment_author_email" class="col-sm-2 control-label">Email*</label>' .
+					'<div class="col-sm-10"><input id="email" placeholder="email@domain.com" name="email" class="form-control" type="text" value="' .
+					esc_attr( $commenter['comment_author_email'] ) . '" /></div></div><!-- form-group -->'
+					,
+					'url'    => '<div class="form-group">' .
+					'<label for="comment_author_url" class="col-sm-2 control-label">Website (optional)</label>' .
+					'<div class="col-sm-10"><input id="url" name="url" class="form-control" placeholder="http://your-site-name.com" type="text" value="' .
+					esc_attr( $commenter['comment_author_url'] ) . '" /></div></div><!-- form-group -->'
+				)
+			),
+			'comment_field' => '<div class="form-group">' .
+			'<textarea id="comment" name="comment" class="form-control" placeholder="Leave a comment" rows="8" aria-required="true"></textarea></div>'
+			,
+			'comment_notes_after' => ''
+			,
+			'title_reply' => '<h4>Leave a Comment</h4>'
+			,
+			'class_submit' => 'btn btn-default'
+		);
+		
+    	comment_form($args, $post->ID);
+	?>
 
 </div><!-- .comments-area -->

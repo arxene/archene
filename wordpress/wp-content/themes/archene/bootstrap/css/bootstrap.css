@@ -6300,6 +6300,8 @@ button.close {
 .row:after,
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after,
+.comment-form .form-group:before,
+.comment-form .form-group:after,
 .btn-toolbar:before,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:before,
