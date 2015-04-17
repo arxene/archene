@@ -116,6 +116,7 @@ img.aligncenter {
 .menu-item {
 	padding: 5px;
 	background-color: #eaf0f8; /* light blue */
+	border-bottom: solid thin #2d72bc;
 }
 
 .menu-item a {
@@ -143,6 +144,7 @@ img.aligncenter {
 
 .menu-item:last-child {
 	border-radius: 0 0 4px 4px;
+	border: none;
 }
 
 /* Override Bootstrap's collapsible menu padding so the links span all the way */
