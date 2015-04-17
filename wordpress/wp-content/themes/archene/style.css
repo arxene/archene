@@ -180,3 +180,18 @@ footer {
 .hashtags li a::before {
 	content: '#';
 }
+
+/**
+ * Style post footer meta information.
+ */
+ .entry-content {
+ 	border-bottom: 1px solid #cacad0;
+ }
+
+ .author-heading {
+ 	font-size: 1.5em;
+ }
+
+ .author-link {
+ 	display: block;
+ }
