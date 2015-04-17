@@ -104,10 +104,50 @@ img.aligncenter {
 	background-image: url('images/logo-bg.png');
 }
 
-#menu ul {
+/**
+ * Style the navigation menu dropdown
+ */
+.menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+.menu-item {
+	padding: 5px;
+	background-color: #eaf0f8; /* light blue */
+}
+
+.menu-item a {
+	color: #2d72bc; /* medium blue */
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+.menu-item.current-menu-item {
+	background-color: #2d72bc; /* medium blue */
+}
+
+.menu-item.current-menu-item a {
+	color: #eaf0f8; /* light blue */
+	text-decoration: none;
+}
+
+.menu-item a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.menu-item:last-child {
+	border-radius: 0 0 4px 4px;
+}
+
+/* Override Bootstrap's collapsible menu padding so the links span all the way */
+.navbar-collapse {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 }
 
 footer {

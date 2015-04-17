@@ -11,10 +11,13 @@
 <script>(function(){document.documentElement.className='js'})();</script>
 
 <title>Archene Design</title>
+
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/sticky-footer.css">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?><!-- this should be the last line before </head> -->
 </head>
