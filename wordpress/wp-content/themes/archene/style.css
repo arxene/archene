@@ -123,6 +123,7 @@ img.aligncenter {
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5em;
+	display: block;
 }
 
 .menu-item.current-menu-item {
