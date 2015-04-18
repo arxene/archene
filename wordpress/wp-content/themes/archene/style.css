@@ -184,14 +184,28 @@ footer {
 /**
  * Style post footer meta information.
  */
- .entry-content {
- 	border-bottom: 1px solid #cacad0;
- }
+.entry-footer {
+	border-top: 1px solid #cacad0;
+	padding-top: 1.5em;
+}
 
- .author-heading {
- 	font-size: 1.5em;
- }
+.author-heading {
+	font-size: 1.5em;
+}
 
- .author-link {
- 	display: block;
- }
+.author-link {
+	display: block;
+}
+
+/**
+ * Style links in footer on a single post page.
+ */
+.nav-previous {
+	float: left;
+	font-size: 1.5em;
+}
+
+.nav-next {
+	float: right;
+	font-size: 1.5em;
+}

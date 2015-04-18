@@ -24,12 +24,11 @@ get_header(); ?>
 			endif;
 
 			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next post:', 'archene' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="screen-reader-text">' . __( 'Previous post:', 'archene' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
+			previous_post_link('<span class="nav-previous"><span class="glyphicon ' .
+				'glyphicon-chevron-left" aria-hidden="true"></span>%link</span>');
+			next_post_link('<span class="nav-next">%link<span class="glyphicon ' .
+				'glyphicon-chevron-right" aria-hidden="true"></span></span>');
+
 
 		// End the loop.
 		endwhile;
