@@ -119,6 +119,10 @@ img.aligncenter {
 	border-bottom: solid thin #fff;
 }
 
+.menu-item:last-child {
+	border: none;
+}
+
 .menu-item a {
 	color: #2d72bc; /* medium blue */
 	text-decoration: none;
@@ -127,14 +131,11 @@ img.aligncenter {
 	display: block;
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item.current-menu-item a {
 	font-weight: bold;
 	text-decoration: none;
 	color: #122D4B;
-}
-
-.menu-item:last-child {
-	border: none;
 }
 
 /* Override Bootstrap's collapsible menu padding so the links span all the way */
