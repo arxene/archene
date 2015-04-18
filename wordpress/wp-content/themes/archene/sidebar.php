@@ -6,7 +6,6 @@
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                             </button>
-                            <span class="navbar-brand">Menu</span>
                         </div>
                         
                         <div id="menu" class="navbar-collapse collapse">

@@ -116,7 +116,7 @@ img.aligncenter {
 .menu-item {
 	padding: 5px;
 	background-color: #eaf0f8; /* light blue */
-	border-bottom: solid thin #2d72bc;
+	border-bottom: solid thin #fff;
 }
 
 .menu-item a {
@@ -127,23 +127,13 @@ img.aligncenter {
 	display: block;
 }
 
-.menu-item.current-menu-item {
-	background-color: #2d72bc; /* medium blue */
-}
-
-.menu-item.current-menu-item a {
-	color: #eaf0f8; /* light blue */
-	text-decoration: none;
-}
-
 .menu-item a:hover {
 	font-weight: bold;
 	text-decoration: none;
+	color: #122D4B;
 }
 
-
 .menu-item:last-child {
-	border-radius: 0 0 4px 4px;
 	border: none;
 }
 
