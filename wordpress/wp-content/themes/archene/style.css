@@ -147,6 +147,7 @@ img.aligncenter {
 footer {
 	display: block;
 	clear: both;
+	padding: .5em 1em;
 }
 
 /* Make it so form label Comment doesn't float to the left of the comments box */
