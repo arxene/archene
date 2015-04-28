@@ -5,10 +5,6 @@ Author: Ray McMahan
 Author URI: http://www.archene.com
 */
 
-/**
- * TODO: Make it so images resize when div.post is smaller than the image
- */
-
 .post {
 	border: 1px solid #e1e1e8;
 	border-radius: 4px;
@@ -200,4 +196,17 @@ footer {
 .nav-next {
 	float: right;
 	font-size: 1.5em;
+}
+
+/**
+ * Derby or Pregnant quiz styles
+ * page-derby-or-pregnant.php
+ */
+
+.quizBtnContainer button {
+  display: inline-block;
+}
+
+.quizBtnContainer {
+  margin-bottom: 1em;
 }
