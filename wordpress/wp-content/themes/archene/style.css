@@ -105,7 +105,7 @@ img.aligncenter {
 }
 
 /**
- * Style the navigation menu dropdown
+ * Style the sidebar navigation menu dropdown
  */
 .menu {
 	list-style-type: none;
@@ -113,17 +113,17 @@ img.aligncenter {
 	padding: 0;
 }
 
-.menu-item {
+#sidebar .menu-item {
 	padding: 5px;
 	background-color: #eaf0f8; /* light blue */
 	border-bottom: solid thin #fff;
 }
 
-.menu-item:last-child {
+#sidebar .menu-item:last-child {
 	border: none;
 }
 
-.menu-item a {
+#sidebar .menu-item a {
 	color: #2d72bc; /* medium blue */
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
@@ -131,8 +131,8 @@ img.aligncenter {
 	display: block;
 }
 
-.menu-item a:hover,
-.menu-item.current-menu-item a {
+#sidebar .menu-item a:hover,
+#sidebar .menu-item.current-menu-item a {
 	font-weight: bold;
 	text-decoration: none;
 	color: #122D4B;

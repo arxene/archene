@@ -1,4 +1,5 @@
 	<footer class="footer">
+		<?php include_once('footer-menu.php'); ?>
         <p class="text-muted">Archene © 2015</p>
     </footer>
     

@@ -17,6 +17,13 @@ function register_sidebar_menu() {
 endif;
 add_action( 'init', 'register_sidebar_menu' );
 
+if ( ! function_exists( 'register_footer_menu' ) ) :
+function register_footer_menu() {
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+endif;
+add_action( 'init', 'register_footer_menu' );
+
 if ( ! function_exists( 'archene_entry_meta' ) ) :
 function archene_entry_meta() {
 	// get posted date and s=author
