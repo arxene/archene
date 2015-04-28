@@ -20,35 +20,12 @@
                 </div><!-- .post -->
                 
                 <?php
-                    // End the loop.
-                    endwhile;
+                    	// End the loop.
+                    	endwhile;
+					endif;
+                	
+                	pagination();
                 ?>
-
-                <!--nav>
-                    <ul class="pagination">
-                        <li>
-                            <?php                    
-                                // Previous page navigation.
-                                previous_posts_link( '&laquo; Newer' );
-                            ?>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>
-                            <?php
-                                next_posts_link( 'Older &raquo;' );
-
-                                // If no content, include the "No posts found" template.
-                                else :
-                                    get_template_part( 'content', 'none' );             
-                                endif;
-                            ?>
-                        </li>
-                    </ul>
-                </nav-->
-
-                <?php pagination(); ?>
             </div>
         </div>
     </div><!-- .container-fluid -->
