@@ -1,6 +1,6 @@
-	<footer class="footer">
+	<footer class="global-footer">
 		<?php include_once('footer-menu.php'); ?>
-        <p class="text-muted">Archene © 2015</p>
+	    <p>Archene © 2015</p>
     </footer>
     
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
