@@ -17,7 +17,9 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/sticky-footer.css">
 
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<base href="/archene/derbyorpregnant" />
 
 <?php wp_head(); ?><!-- this should be the last line before </head> -->
 </head>
