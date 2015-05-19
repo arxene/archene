@@ -153,26 +153,9 @@ img.aligncenter {
   overflow: hidden; /* added so images don't flow outside container */
 }
 
-/* Footer menu */
-.global-footer {
-	padding: .5em 1em;
-	background-color: #D8F4EB;
-	width: 100%;
-}
-
-.global-footer p {
-  color: rgb(119, 119, 119);
-}
-
 .footer-menu li {
   display: inline-block;
   margin-right: 20px;
-}
-
-@media screen and (max-width: 450px) {
-  .footer-menu li {
-    display: block;
-  }
 }
 
 /* Make it so form label Comment doesn't float to the left of the comments box */

@@ -1,4 +1,6 @@
-	<footer class="global-footer">
+	</div><!-- #head-body-container -->
+	
+	<footer class="footer">
 		<?php include_once('footer-menu.php'); ?>
 	    <p>Archene © 2015</p>
     </footer>
