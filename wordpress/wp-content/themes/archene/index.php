@@ -27,7 +27,7 @@
                 	pagination();
                 ?>
             </div>
-        </div>
+        </div><!-- .row -->
     </div><!-- .container-fluid -->
     
 	<?php get_footer(); ?>
