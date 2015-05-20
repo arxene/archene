@@ -157,6 +157,10 @@ img.aligncenter {
 
 .footer {
   padding: 1em;
+  margin-bottom: 0;
+  position:absolute;
+  width: 100%;
+  background-color: #d8f4eb;
 }
 
 .footer-menu li {
