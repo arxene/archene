@@ -153,14 +153,29 @@ img.aligncenter {
   overflow: hidden; /* added so images don't flow outside container */
 }
 
-/* Style footer links and copyright */
+/* Style footer links and copyright.
+ * .page-wrapper and .content added for sticky footer as described here:
+ * http://www.cssreset.com/demos/layouts/how-to-keep-footer-at-bottom-of-page-with-css/
+ */
 
 .footer {
   padding: 1em;
-  margin-bottom: 0;
-  position:absolute;
   width: 100%;
   background-color: #d8f4eb;
+  
+  height:80px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 80px;
 }
 
 .footer-menu li {

@@ -2,6 +2,7 @@
 		<?php include_once('footer-menu.php'); ?>
 	    <p>Archene © 2015</p>
     </footer>
+  </div><!-- .page-wrapper -->
     
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-1.11.2.min.js"></script>

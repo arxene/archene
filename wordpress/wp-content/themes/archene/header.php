@@ -24,6 +24,7 @@
 </head>
 
 <body>
+	<div class="page-wrapper">
     <header>
         <?php if ( get_header_image() ) : ?>
             <div id="site-header">
@@ -34,7 +35,7 @@
         <?php endif; ?>
     </header>
     
-    <div class="container-fluid">
+    <div class="container-fluid content">
     	<div class="page-header">                
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             
