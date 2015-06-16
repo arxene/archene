@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-        	<div class="col-xs-12 col-sm-8">
+        	<div class="col-xs-12 col-sm-8 col-lg-9">
 				<?php
                     if ( have_posts() ) :
                         // Start the loop.
