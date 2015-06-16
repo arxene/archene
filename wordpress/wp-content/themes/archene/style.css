@@ -9,6 +9,14 @@ Author URI: http://www.archene.com
   font-family: 'Open Sans', sans-serif;
 }
 
+/* adding the following two styles so that the sticky footer works in Firefox */
+html {
+  min-height: 100%;
+}
+body {
+  height: 100%;
+}
+
 p {
   font-size: 16px;
   line-height: 2;
